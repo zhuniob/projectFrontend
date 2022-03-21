@@ -1,0 +1,28 @@
+<div class="card border-primary mb-3">
+    <div class="card-header">Comics</div>
+    <div class="card-body text-primary">
+        <h5 class="card-title">Catalogo de Comics</h5>
+
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Codigo</th>
+                    <th>Editorial</th>
+                    <th>Titulo</th>
+                    <th>Descripcion</th>
+                    <th>Nro. Paginas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let comic of comics">
+                    <td>{{comic.codigo}}</td>
+                    <td>{{comic.editorial}}</td>
+                    <td>{{comic.titulo}}</td>
+                    <td>{{comic.descripcion}}</td>
+                    <td>{{comic.nroPaginas}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
